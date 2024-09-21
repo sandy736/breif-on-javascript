@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+  
+<body>
+    <button onclick="myfunction()">try</button>
+    <p id="hour"></p>
+    <p id="message"></p>
+<script>
+   function myfunction (){
+    var msg
+    var time=new Date().getHours()
+    if(time<10){
+        msg="good morning"
+    }
+
+    else if(time<18){
+        msg="good day"
+    }
+
+    else if(time<24){
+        msg="good night"
+    }
+    else{
+        msg="nice day"
+    }
+    document.getElementById ("hour").innerHTML="current hour is="+time
+    document.getElementById ("message").innerHTML=msg
+   }
+</script>
+
+
+</body>
+</html>
